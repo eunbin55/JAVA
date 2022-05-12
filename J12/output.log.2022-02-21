@@ -1,0 +1,13 @@
+2022-02-21 23:03:46,166 DEBUG [main] stirng.LoggerManager (ExceptionEX02Main.java:15)     - 1 result: 11
+2022-02-21 23:03:46,171 DEBUG [main] stirng.LoggerManager (ExceptionEX02Main.java:15)     - 1 result: 100
+2022-02-21 23:03:46,172 DEBUG [main] stirng.LoggerManager (ExceptionEX02Main.java:15)     - 1 result: 100
+2022-02-21 23:03:46,172 DEBUG [main] stirng.LoggerManager (ExceptionEX02Main.java:15)     - 1 result: 50
+2022-02-21 23:03:46,172 DEBUG [main] stirng.LoggerManager (ExceptionEX02Main.java:18)     - 0 / by zero 발생
+2022-02-21 23:03:46,172 DEBUG [main] stirng.LoggerManager (ExceptionEX02Main.java:19)     - java.lang.ArithmeticException: / by zero
+2022-02-21 23:03:46,172 DEBUG [main] stirng.LoggerManager (ExceptionEX02Main.java:25)     - 3 프로그램 종료!
+2022-02-21 23:03:54,060 DEBUG [main] stirng.StringValueOfMain (StringValueOfMain.java:10)     - numStr=100
+2022-02-21 23:03:54,062 DEBUG [main] stirng.StringValueOfMain (StringValueOfMain.java:14)     - 1001
+2022-02-21 23:03:54,062 DEBUG [main] stirng.StringValueOfMain (StringValueOfMain.java:15)     - 101
+2022-02-21 23:03:54,062 DEBUG [main] stirng.StringValueOfMain (StringValueOfMain.java:16)     - 101
+2022-02-21 23:03:54,063 DEBUG [main] stirng.StringValueOfMain (StringValueOfMain.java:21)     - 201.1
+2022-02-21 23:03:54,064 DEBUG [main] stirng.StringValueOfMain (StringValueOfMain.java:22)     - 201.1

@@ -1,0 +1,27 @@
+package com.pcwk.oop04;
+
+public class Leader extends Student {
+
+	public Leader() {
+		System.out.println("Leader() 생성자");
+	}
+	
+	void lead() {
+		System.out.println("리드한다.");
+	}
+
+	@Override
+	public void say() {
+		
+		System.out.println("선생님께 인사!");
+	
+	}//tool로 오버라이딩 방법: alt+shift+s -> override
+
+	
+	//오버라이딩
+//	@Override
+//	public void say() {
+//		System.out.println("선생님께 인사!");
+//	}
+	
+}

@@ -1,0 +1,2145 @@
+2022-04-13 12:30:09,278 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 12:30:09,280 DEBUG [main] board.BoardDao    (BoardDao.java:57)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 12:30:09,280 DEBUG [main] board.BoardDao    (BoardDao.java:58)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 12:30:09,341 DEBUG [main] board.BoardDao    (BoardDao.java:78)     - SQLException: ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+2022-04-13 12:30:09,342 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 12:30:09,342 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 12:30:09,343 DEBUG [main] board.BoardMain   (BoardMain.java:28)     - -------------
+2022-04-13 12:30:09,343 DEBUG [main] board.BoardMain   (BoardMain.java:29)     - -등록실패-
+2022-04-13 12:30:09,343 DEBUG [main] board.BoardMain   (BoardMain.java:30)     - -------------
+2022-04-13 12:43:46,445 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 12:43:46,446 DEBUG [main] board.BoardDao    (BoardDao.java:109)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 12:43:46,446 DEBUG [main] board.BoardDao    (BoardDao.java:110)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 12:43:46,505 DEBUG [main] board.BoardDao    (BoardDao.java:121)     - flag : 1
+2022-04-13 12:43:46,506 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 12:43:46,506 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 12:43:46,508 DEBUG [main] board.BoardMain   (BoardMain.java:37)     - --------------
+2022-04-13 12:43:46,508 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - -삭제성공-
+2022-04-13 12:43:46,508 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - --------------
+2022-04-13 12:43:46,537 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 12:43:46,537 DEBUG [main] board.BoardDao    (BoardDao.java:57)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 12:43:46,537 DEBUG [main] board.BoardDao    (BoardDao.java:58)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 12:43:46,540 DEBUG [main] board.BoardDao    (BoardDao.java:74)     - flag : 1
+2022-04-13 12:43:46,540 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 12:43:46,540 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 12:43:46,540 DEBUG [main] board.BoardMain   (BoardMain.java:24)     - -------------
+2022-04-13 12:43:46,541 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -등록성공-
+2022-04-13 12:43:46,542 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -------------
+2022-04-13 14:00:23,116 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 14:00:23,118 DEBUG [main] cmn.SawonDao      (SawonDao.java:417)     - query : 
+DELETE FROM sawon  
+WHERE empno = ?    
+
+2022-04-13 14:00:23,118 DEBUG [main] cmn.SawonDao      (SawonDao.java:418)     - param : 
+SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:00:23,176 DEBUG [main] cmn.SawonDao      (SawonDao.java:432)     - flag : 1
+2022-04-13 14:00:23,176 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:00:23,177 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:00:23,177 DEBUG [main] cmn.SawonMain     (SawonMain.java:42)     - -------------------------
+2022-04-13 14:00:23,177 DEBUG [main] cmn.SawonMain     (SawonMain.java:43)     -     삭제 성공   
+2022-04-13 14:00:23,178 DEBUG [main] cmn.SawonMain     (SawonMain.java:44)     - -------------------------
+2022-04-13 14:00:23,204 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 14:00:23,204 DEBUG [main] cmn.SawonDao      (SawonDao.java:366)     -  INSERT INTO sawon ( 
+     empno,          
+     ename,          
+     hiredate,       
+     deptno          
+ ) VALUES (          
+     ?,              
+     ?,              
+     sysdate,        
+     ?               
+ )                   
+
+2022-04-13 14:00:23,204 DEBUG [main] cmn.SawonDao      (SawonDao.java:367)     - param: SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:00:23,206 DEBUG [main] cmn.SawonDao      (SawonDao.java:382)     - flag : 1
+2022-04-13 14:00:23,206 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:00:23,206 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:00:23,206 DEBUG [main] cmn.SawonMain     (SawonMain.java:29)     - ----------------
+2022-04-13 14:00:23,207 DEBUG [main] cmn.SawonMain     (SawonMain.java:30)     -    등록성공
+2022-04-13 14:00:23,208 DEBUG [main] cmn.SawonMain     (SawonMain.java:31)     - ----------------
+2022-04-13 14:00:23,238 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 14:00:23,239 DEBUG [main] cmn.SawonMain     (SawonMain.java:87)     - -------------------------
+2022-04-13 14:00:23,239 DEBUG [main] cmn.SawonMain     (SawonMain.java:88)     -     upsert 성공   
+2022-04-13 14:00:23,239 DEBUG [main] cmn.SawonMain     (SawonMain.java:89)     - -------------------------
+2022-04-13 14:00:23,264 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2698dc7
+2022-04-13 14:00:23,264 DEBUG [main] cmn.SawonDao      (SawonDao.java:478)     - query: 
+  SELECT empno,                                             
+    	  ename,                                             
+        TO_CHAR(hiredate,'YYYY/MM/DD HH24:MI:SS') hiredate,
+    	  deptno                                             
+ FROM sawon                                           	 
+ WHERE empno = ?                                     		 
+
+2022-04-13 14:00:23,264 DEBUG [main] cmn.SawonDao      (SawonDao.java:479)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:00:23,303 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:00:23,303 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:00:23,303 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:00:23,304 DEBUG [main] cmn.SawonMain     (SawonMain.java:55)     - ---------------------
+2022-04-13 14:00:23,304 DEBUG [main] cmn.SawonMain     (SawonMain.java:56)     - ---조회성공---
+2022-04-13 14:00:23,304 DEBUG [main] cmn.SawonMain     (SawonMain.java:57)     - ---------------------
+2022-04-13 14:00:23,328 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@7b227d8d
+2022-04-13 14:00:23,329 DEBUG [main] cmn.SawonDao      (SawonDao.java:283)     - query:
+ SELECT tt1.rnum as num,                                   
+        tt1.empno,                                         
+        tt1.ename,                                         
+        TO_CHAR(tt1.hiredate,'YYYY/MM/DD') AS hiredate,    
+        tt1.deptno                                         
+ FROM(                                                     
+     SELECT ROWNUM AS rnum, t1.*                           
+     FROM (                                                
+         SELECT *                                          
+         FROM sawon                                        
+         --검색조건                                        
+         ORDER BY hiredate DESC                            
+     )t1                                                   
+     WHERE ROWNUM <= (?*(?-1)+?) 			
+ )tt1                                                   	   
+     WHERE rnum >= (?*(?-1)+1) 			
+
+2022-04-13 14:00:23,329 DEBUG [main] cmn.SawonDao      (SawonDao.java:284)     - param:SearchVO [searchDiv=pcwk8, searchWord=, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:00:23,330 DEBUG [main] cmn.SawonDao      (SawonDao.java:325)     - SQLException: 부적합한 열 인덱스
+2022-04-13 14:00:23,331 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:00:23,331 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:00:23,332 DEBUG [main] cmn.SawonMain     (SawonMain.java:109)     - -------------------------
+2022-04-13 14:00:23,332 DEBUG [main] cmn.SawonMain     (SawonMain.java:110)     -     목록조회 실패   
+2022-04-13 14:00:23,333 DEBUG [main] cmn.SawonMain     (SawonMain.java:111)     - -------------------------
+2022-04-13 14:00:23,357 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@d706f19
+2022-04-13 14:00:23,357 DEBUG [main] cmn.SawonDao      (SawonDao.java:72)     - query: 
+ SELECT COUNT(*) AS totalCnt	
+FROM sawon					
+
+2022-04-13 14:00:23,358 DEBUG [main] cmn.SawonDao      (SawonDao.java:73)     - param: SearchVO [searchDiv=pcwk8, searchWord=, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:00:23,358 DEBUG [main] cmn.SawonDao      (SawonDao.java:89)     - SQLException: 부적합한 열 인덱스
+2022-04-13 14:00:23,358 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:00:23,358 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:00:23,359 DEBUG [main] cmn.SawonMain     (SawonMain.java:122)     - ----------------------
+2022-04-13 14:00:23,359 DEBUG [main] cmn.SawonMain     (SawonMain.java:123)     - -총글수 :0
+2022-04-13 14:00:23,359 DEBUG [main] cmn.SawonMain     (SawonMain.java:124)     - ----------------------
+2022-04-13 14:03:50,918 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 14:03:50,919 DEBUG [main] cmn.SawonDao      (SawonDao.java:417)     - query : 
+DELETE FROM sawon  
+WHERE empno = ?    
+
+2022-04-13 14:03:50,919 DEBUG [main] cmn.SawonDao      (SawonDao.java:418)     - param : 
+SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:03:50,984 DEBUG [main] cmn.SawonDao      (SawonDao.java:432)     - flag : 1
+2022-04-13 14:03:50,984 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:03:50,985 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:03:50,985 DEBUG [main] cmn.SawonMain     (SawonMain.java:42)     - -------------------------
+2022-04-13 14:03:50,985 DEBUG [main] cmn.SawonMain     (SawonMain.java:43)     -     삭제 성공   
+2022-04-13 14:03:50,986 DEBUG [main] cmn.SawonMain     (SawonMain.java:44)     - -------------------------
+2022-04-13 14:03:51,015 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 14:03:51,015 DEBUG [main] cmn.SawonDao      (SawonDao.java:366)     -  INSERT INTO sawon ( 
+     empno,          
+     ename,          
+     hiredate,       
+     deptno          
+ ) VALUES (          
+     ?,              
+     ?,              
+     sysdate,        
+     ?               
+ )                   
+
+2022-04-13 14:03:51,015 DEBUG [main] cmn.SawonDao      (SawonDao.java:367)     - param: SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:03:51,017 DEBUG [main] cmn.SawonDao      (SawonDao.java:382)     - flag : 1
+2022-04-13 14:03:51,017 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:03:51,017 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:03:51,019 DEBUG [main] cmn.SawonMain     (SawonMain.java:29)     - ----------------
+2022-04-13 14:03:51,019 DEBUG [main] cmn.SawonMain     (SawonMain.java:30)     -    등록성공
+2022-04-13 14:03:51,019 DEBUG [main] cmn.SawonMain     (SawonMain.java:31)     - ----------------
+2022-04-13 14:03:51,043 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 14:03:51,043 DEBUG [main] cmn.SawonDao      (SawonDao.java:538)     - query:
+UPDATE sawon			
+SET ename = ?, 		
+hiredate = SYSDATE, 	
+deptno = ?			
+WHERE empno = ?		
+
+2022-04-13 14:03:51,043 DEBUG [main] cmn.SawonDao      (SawonDao.java:539)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:03:51,044 DEBUG [main] cmn.SawonDao      (SawonDao.java:551)     - flag: 1
+2022-04-13 14:03:51,045 DEBUG [main] cmn.SawonMain     (SawonMain.java:87)     - -------------------------
+2022-04-13 14:03:51,045 DEBUG [main] cmn.SawonMain     (SawonMain.java:88)     -     upsert 성공   
+2022-04-13 14:03:51,045 DEBUG [main] cmn.SawonMain     (SawonMain.java:89)     - -------------------------
+2022-04-13 14:03:51,071 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2698dc7
+2022-04-13 14:03:51,071 DEBUG [main] cmn.SawonDao      (SawonDao.java:478)     - query: 
+  SELECT empno,                                             
+    	  ename,                                             
+        TO_CHAR(hiredate,'YYYY/MM/DD HH24:MI:SS') hiredate,
+    	  deptno                                             
+ FROM sawon                                           	 
+ WHERE empno = ?                                     		 
+
+2022-04-13 14:03:51,071 DEBUG [main] cmn.SawonDao      (SawonDao.java:479)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:03:51,112 DEBUG [main] cmn.SawonDao      (SawonDao.java:499)     - outVO:SawonVO [empno=9001, ename=kakaoUU, hiredate=2022/04/13 14:03:51, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:03:51,112 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:03:51,112 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:03:51,112 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:03:51,113 DEBUG [main] cmn.SawonMain     (SawonMain.java:55)     - ---------------------
+2022-04-13 14:03:51,113 DEBUG [main] cmn.SawonMain     (SawonMain.java:56)     - ---조회성공---
+2022-04-13 14:03:51,113 DEBUG [main] cmn.SawonMain     (SawonMain.java:57)     - ---------------------
+2022-04-13 14:03:51,137 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@7b227d8d
+2022-04-13 14:03:51,137 DEBUG [main] cmn.SawonDao      (SawonDao.java:283)     - query:
+ SELECT tt1.rnum as num,                                   
+        tt1.empno,                                         
+        tt1.ename,                                         
+        TO_CHAR(tt1.hiredate,'YYYY/MM/DD') AS hiredate,    
+        tt1.deptno                                         
+ FROM(                                                     
+     SELECT ROWNUM AS rnum, t1.*                           
+     FROM (                                                
+         SELECT *                                          
+         FROM sawon                                        
+         --검색조건                                        
+         ORDER BY hiredate DESC                            
+     )t1                                                   
+     WHERE ROWNUM <= (?*(?-1)+?) 			
+ )tt1                                                   	   
+     WHERE rnum >= (?*(?-1)+1) 			
+
+2022-04-13 14:03:51,137 DEBUG [main] cmn.SawonDao      (SawonDao.java:284)     - param:SearchVO [searchDiv=pcwk8, searchWord=, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:03:51,138 DEBUG [main] cmn.SawonDao      (SawonDao.java:325)     - SQLException: 부적합한 열 인덱스
+2022-04-13 14:03:51,139 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:03:51,139 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:03:51,140 DEBUG [main] cmn.SawonMain     (SawonMain.java:109)     - -------------------------
+2022-04-13 14:03:51,140 DEBUG [main] cmn.SawonMain     (SawonMain.java:110)     -     목록조회 실패   
+2022-04-13 14:03:51,140 DEBUG [main] cmn.SawonMain     (SawonMain.java:111)     - -------------------------
+2022-04-13 14:03:51,164 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@d706f19
+2022-04-13 14:03:51,165 DEBUG [main] cmn.SawonDao      (SawonDao.java:72)     - query: 
+ SELECT COUNT(*) AS totalCnt	
+FROM sawon					
+
+2022-04-13 14:03:51,165 DEBUG [main] cmn.SawonDao      (SawonDao.java:73)     - param: SearchVO [searchDiv=pcwk8, searchWord=, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:03:51,165 DEBUG [main] cmn.SawonDao      (SawonDao.java:89)     - SQLException: 부적합한 열 인덱스
+2022-04-13 14:03:51,165 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:03:51,165 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:03:51,166 DEBUG [main] cmn.SawonMain     (SawonMain.java:122)     - ----------------------
+2022-04-13 14:03:51,166 DEBUG [main] cmn.SawonMain     (SawonMain.java:123)     - -총글수 :0
+2022-04-13 14:03:51,166 DEBUG [main] cmn.SawonMain     (SawonMain.java:124)     - ----------------------
+2022-04-13 14:04:23,030 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 14:04:23,031 DEBUG [main] cmn.SawonDao      (SawonDao.java:417)     - query : 
+DELETE FROM sawon  
+WHERE empno = ?    
+
+2022-04-13 14:04:23,031 DEBUG [main] cmn.SawonDao      (SawonDao.java:418)     - param : 
+SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:04:23,094 DEBUG [main] cmn.SawonDao      (SawonDao.java:432)     - flag : 1
+2022-04-13 14:04:23,095 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:04:23,095 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:04:23,096 DEBUG [main] cmn.SawonMain     (SawonMain.java:42)     - -------------------------
+2022-04-13 14:04:23,097 DEBUG [main] cmn.SawonMain     (SawonMain.java:43)     -     삭제 성공   
+2022-04-13 14:04:23,097 DEBUG [main] cmn.SawonMain     (SawonMain.java:44)     - -------------------------
+2022-04-13 14:04:23,119 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 14:04:23,120 DEBUG [main] cmn.SawonDao      (SawonDao.java:366)     -  INSERT INTO sawon ( 
+     empno,          
+     ename,          
+     hiredate,       
+     deptno          
+ ) VALUES (          
+     ?,              
+     ?,              
+     sysdate,        
+     ?               
+ )                   
+
+2022-04-13 14:04:23,120 DEBUG [main] cmn.SawonDao      (SawonDao.java:367)     - param: SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:04:23,121 DEBUG [main] cmn.SawonDao      (SawonDao.java:382)     - flag : 1
+2022-04-13 14:04:23,121 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:04:23,121 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:04:23,122 DEBUG [main] cmn.SawonMain     (SawonMain.java:29)     - ----------------
+2022-04-13 14:04:23,122 DEBUG [main] cmn.SawonMain     (SawonMain.java:30)     -    등록성공
+2022-04-13 14:04:23,122 DEBUG [main] cmn.SawonMain     (SawonMain.java:31)     - ----------------
+2022-04-13 14:04:23,148 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 14:04:23,148 DEBUG [main] cmn.SawonDao      (SawonDao.java:538)     - query:
+UPDATE sawon			
+SET ename = ?, 		
+hiredate = SYSDATE, 	
+deptno = ?			
+WHERE empno = ?		
+
+2022-04-13 14:04:23,148 DEBUG [main] cmn.SawonDao      (SawonDao.java:539)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:04:23,150 DEBUG [main] cmn.SawonDao      (SawonDao.java:551)     - flag: 1
+2022-04-13 14:04:23,150 DEBUG [main] cmn.SawonMain     (SawonMain.java:87)     - -------------------------
+2022-04-13 14:04:23,150 DEBUG [main] cmn.SawonMain     (SawonMain.java:88)     -     upsert 성공   
+2022-04-13 14:04:23,150 DEBUG [main] cmn.SawonMain     (SawonMain.java:89)     - -------------------------
+2022-04-13 14:04:23,176 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2698dc7
+2022-04-13 14:04:23,176 DEBUG [main] cmn.SawonDao      (SawonDao.java:478)     - query: 
+  SELECT empno,                                             
+    	  ename,                                             
+        TO_CHAR(hiredate,'YYYY/MM/DD HH24:MI:SS') hiredate,
+    	  deptno                                             
+ FROM sawon                                           	 
+ WHERE empno = ?                                     		 
+
+2022-04-13 14:04:23,176 DEBUG [main] cmn.SawonDao      (SawonDao.java:479)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:04:23,221 DEBUG [main] cmn.SawonDao      (SawonDao.java:499)     - outVO:SawonVO [empno=9001, ename=kakaoUU, hiredate=2022/04/13 14:04:23, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:04:23,221 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:04:23,221 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:04:23,221 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:04:23,222 DEBUG [main] cmn.SawonMain     (SawonMain.java:55)     - ---------------------
+2022-04-13 14:04:23,222 DEBUG [main] cmn.SawonMain     (SawonMain.java:56)     - ---조회성공---
+2022-04-13 14:04:23,222 DEBUG [main] cmn.SawonMain     (SawonMain.java:57)     - ---------------------
+2022-04-13 14:04:23,246 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@7b227d8d
+2022-04-13 14:04:23,246 DEBUG [main] cmn.SawonDao      (SawonDao.java:283)     - query:
+ SELECT tt1.rnum as num,                                   
+        tt1.empno,                                         
+        tt1.ename,                                         
+        TO_CHAR(tt1.hiredate,'YYYY/MM/DD') AS hiredate,    
+        tt1.deptno                                         
+ FROM(                                                     
+     SELECT ROWNUM AS rnum, t1.*                           
+     FROM (                                                
+         SELECT *                                          
+         FROM sawon                                        
+         --검색조건                                        
+         ORDER BY hiredate DESC                            
+     )t1                                                   
+     WHERE ROWNUM <= (?*(?-1)+?) 			
+ )tt1                                                   	   
+     WHERE rnum >= (?*(?-1)+1) 			
+
+2022-04-13 14:04:23,247 DEBUG [main] cmn.SawonDao      (SawonDao.java:284)     - param:SearchVO [searchDiv=pcwk8, searchWord=, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:04:23,248 DEBUG [main] cmn.SawonDao      (SawonDao.java:325)     - SQLException: 부적합한 열 인덱스
+2022-04-13 14:04:23,249 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:04:23,249 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:04:23,249 DEBUG [main] cmn.SawonMain     (SawonMain.java:109)     - -------------------------
+2022-04-13 14:04:23,249 DEBUG [main] cmn.SawonMain     (SawonMain.java:110)     -     목록조회 실패   
+2022-04-13 14:04:23,250 DEBUG [main] cmn.SawonMain     (SawonMain.java:111)     - -------------------------
+2022-04-13 14:04:33,689 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 14:04:33,691 DEBUG [main] cmn.SawonDao      (SawonDao.java:417)     - query : 
+DELETE FROM sawon  
+WHERE empno = ?    
+
+2022-04-13 14:04:33,691 DEBUG [main] cmn.SawonDao      (SawonDao.java:418)     - param : 
+SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:04:33,755 DEBUG [main] cmn.SawonDao      (SawonDao.java:432)     - flag : 1
+2022-04-13 14:04:33,756 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:04:33,756 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:04:33,756 DEBUG [main] cmn.SawonMain     (SawonMain.java:42)     - -------------------------
+2022-04-13 14:04:33,756 DEBUG [main] cmn.SawonMain     (SawonMain.java:43)     -     삭제 성공   
+2022-04-13 14:04:33,757 DEBUG [main] cmn.SawonMain     (SawonMain.java:44)     - -------------------------
+2022-04-13 14:04:33,781 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 14:04:33,781 DEBUG [main] cmn.SawonDao      (SawonDao.java:366)     -  INSERT INTO sawon ( 
+     empno,          
+     ename,          
+     hiredate,       
+     deptno          
+ ) VALUES (          
+     ?,              
+     ?,              
+     sysdate,        
+     ?               
+ )                   
+
+2022-04-13 14:04:33,781 DEBUG [main] cmn.SawonDao      (SawonDao.java:367)     - param: SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:04:33,783 DEBUG [main] cmn.SawonDao      (SawonDao.java:382)     - flag : 1
+2022-04-13 14:04:33,783 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:04:33,783 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:04:33,783 DEBUG [main] cmn.SawonMain     (SawonMain.java:29)     - ----------------
+2022-04-13 14:04:33,784 DEBUG [main] cmn.SawonMain     (SawonMain.java:30)     -    등록성공
+2022-04-13 14:04:33,784 DEBUG [main] cmn.SawonMain     (SawonMain.java:31)     - ----------------
+2022-04-13 14:04:33,809 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 14:04:33,809 DEBUG [main] cmn.SawonDao      (SawonDao.java:538)     - query:
+UPDATE sawon			
+SET ename = ?, 		
+hiredate = SYSDATE, 	
+deptno = ?			
+WHERE empno = ?		
+
+2022-04-13 14:04:33,809 DEBUG [main] cmn.SawonDao      (SawonDao.java:539)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:04:33,810 DEBUG [main] cmn.SawonDao      (SawonDao.java:551)     - flag: 1
+2022-04-13 14:04:33,811 DEBUG [main] cmn.SawonMain     (SawonMain.java:87)     - -------------------------
+2022-04-13 14:04:33,811 DEBUG [main] cmn.SawonMain     (SawonMain.java:88)     -     upsert 성공   
+2022-04-13 14:04:33,811 DEBUG [main] cmn.SawonMain     (SawonMain.java:89)     - -------------------------
+2022-04-13 14:04:33,837 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2698dc7
+2022-04-13 14:04:33,837 DEBUG [main] cmn.SawonDao      (SawonDao.java:478)     - query: 
+  SELECT empno,                                             
+    	  ename,                                             
+        TO_CHAR(hiredate,'YYYY/MM/DD HH24:MI:SS') hiredate,
+    	  deptno                                             
+ FROM sawon                                           	 
+ WHERE empno = ?                                     		 
+
+2022-04-13 14:04:33,837 DEBUG [main] cmn.SawonDao      (SawonDao.java:479)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:04:33,879 DEBUG [main] cmn.SawonDao      (SawonDao.java:499)     - outVO:SawonVO [empno=9001, ename=kakaoUU, hiredate=2022/04/13 14:04:33, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:04:33,879 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:04:33,879 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:04:33,879 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:04:33,880 DEBUG [main] cmn.SawonMain     (SawonMain.java:55)     - ---------------------
+2022-04-13 14:04:33,880 DEBUG [main] cmn.SawonMain     (SawonMain.java:56)     - ---조회성공---
+2022-04-13 14:04:33,880 DEBUG [main] cmn.SawonMain     (SawonMain.java:57)     - ---------------------
+2022-04-13 14:04:33,904 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@7b227d8d
+2022-04-13 14:04:33,904 DEBUG [main] cmn.SawonDao      (SawonDao.java:283)     - query:
+ SELECT tt1.rnum as num,                                   
+        tt1.empno,                                         
+        tt1.ename,                                         
+        TO_CHAR(tt1.hiredate,'YYYY/MM/DD') AS hiredate,    
+        tt1.deptno                                         
+ FROM(                                                     
+     SELECT ROWNUM AS rnum, t1.*                           
+     FROM (                                                
+         SELECT *                                          
+         FROM sawon                                        
+         --검색조건                                        
+         ORDER BY hiredate DESC                            
+     )t1                                                   
+     WHERE ROWNUM <= (?*(?-1)+?) 			
+ )tt1                                                   	   
+     WHERE rnum >= (?*(?-1)+1) 			
+
+2022-04-13 14:04:33,904 DEBUG [main] cmn.SawonDao      (SawonDao.java:284)     - param:SearchVO [searchDiv=pcwk8, searchWord=, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:04:33,905 DEBUG [main] cmn.SawonDao      (SawonDao.java:325)     - SQLException: 부적합한 열 인덱스
+2022-04-13 14:04:33,907 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:04:33,907 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:04:33,907 DEBUG [main] cmn.SawonMain     (SawonMain.java:109)     - -------------------------
+2022-04-13 14:04:33,907 DEBUG [main] cmn.SawonMain     (SawonMain.java:110)     -     목록조회 실패   
+2022-04-13 14:04:33,907 DEBUG [main] cmn.SawonMain     (SawonMain.java:111)     - -------------------------
+2022-04-13 14:04:33,936 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@d706f19
+2022-04-13 14:04:33,936 DEBUG [main] cmn.SawonDao      (SawonDao.java:72)     - query: 
+ SELECT COUNT(*) AS totalCnt	
+FROM sawon					
+
+2022-04-13 14:04:33,937 DEBUG [main] cmn.SawonDao      (SawonDao.java:73)     - param: SearchVO [searchDiv=pcwk8, searchWord=, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:04:33,937 DEBUG [main] cmn.SawonDao      (SawonDao.java:89)     - SQLException: 부적합한 열 인덱스
+2022-04-13 14:04:33,937 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:04:33,937 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:04:33,937 DEBUG [main] cmn.SawonMain     (SawonMain.java:122)     - ----------------------
+2022-04-13 14:04:33,938 DEBUG [main] cmn.SawonMain     (SawonMain.java:123)     - -총글수 :0
+2022-04-13 14:04:33,938 DEBUG [main] cmn.SawonMain     (SawonMain.java:124)     - ----------------------
+2022-04-13 14:14:11,154 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 14:14:11,155 DEBUG [main] cmn.SawonDao      (SawonDao.java:417)     - query : 
+DELETE FROM sawon  
+WHERE empno = ?    
+
+2022-04-13 14:14:11,156 DEBUG [main] cmn.SawonDao      (SawonDao.java:418)     - param : 
+SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:14:11,215 DEBUG [main] cmn.SawonDao      (SawonDao.java:432)     - flag : 1
+2022-04-13 14:14:11,215 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:14:11,215 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:14:11,215 DEBUG [main] cmn.SawonMain     (SawonMain.java:42)     - -------------------------
+2022-04-13 14:14:11,217 DEBUG [main] cmn.SawonMain     (SawonMain.java:43)     -     삭제 성공   
+2022-04-13 14:14:11,217 DEBUG [main] cmn.SawonMain     (SawonMain.java:44)     - -------------------------
+2022-04-13 14:14:11,245 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 14:14:11,245 DEBUG [main] cmn.SawonDao      (SawonDao.java:366)     -  INSERT INTO sawon ( 
+     empno,          
+     ename,          
+     hiredate,       
+     deptno          
+ ) VALUES (          
+     ?,              
+     ?,              
+     sysdate,        
+     ?               
+ )                   
+
+2022-04-13 14:14:11,245 DEBUG [main] cmn.SawonDao      (SawonDao.java:367)     - param: SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:14:11,247 DEBUG [main] cmn.SawonDao      (SawonDao.java:382)     - flag : 1
+2022-04-13 14:14:11,247 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:14:11,247 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:14:11,247 DEBUG [main] cmn.SawonMain     (SawonMain.java:29)     - ----------------
+2022-04-13 14:14:11,248 DEBUG [main] cmn.SawonMain     (SawonMain.java:30)     -    등록성공
+2022-04-13 14:14:11,249 DEBUG [main] cmn.SawonMain     (SawonMain.java:31)     - ----------------
+2022-04-13 14:14:11,273 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 14:14:11,273 DEBUG [main] cmn.SawonDao      (SawonDao.java:538)     - query:
+UPDATE sawon			
+SET ename = ?, 		
+hiredate = SYSDATE, 	
+deptno = ?			
+WHERE empno = ?		
+
+2022-04-13 14:14:11,273 DEBUG [main] cmn.SawonDao      (SawonDao.java:539)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:14:11,274 DEBUG [main] cmn.SawonDao      (SawonDao.java:551)     - flag: 1
+2022-04-13 14:14:11,274 DEBUG [main] cmn.SawonMain     (SawonMain.java:87)     - -------------------------
+2022-04-13 14:14:11,274 DEBUG [main] cmn.SawonMain     (SawonMain.java:88)     -     upsert 성공   
+2022-04-13 14:14:11,274 DEBUG [main] cmn.SawonMain     (SawonMain.java:89)     - -------------------------
+2022-04-13 14:14:11,299 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2698dc7
+2022-04-13 14:14:11,299 DEBUG [main] cmn.SawonDao      (SawonDao.java:478)     - query: 
+  SELECT empno,                                             
+    	  ename,                                             
+        TO_CHAR(hiredate,'YYYY/MM/DD HH24:MI:SS') hiredate,
+    	  deptno                                             
+ FROM sawon                                           	 
+ WHERE empno = ?                                     		 
+
+2022-04-13 14:14:11,299 DEBUG [main] cmn.SawonDao      (SawonDao.java:479)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:14:11,342 DEBUG [main] cmn.SawonDao      (SawonDao.java:499)     - outVO:SawonVO [empno=9001, ename=kakaoUU, hiredate=2022/04/13 14:14:11, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:14:11,342 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:14:11,342 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:14:11,342 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:14:11,343 DEBUG [main] cmn.SawonMain     (SawonMain.java:55)     - ---------------------
+2022-04-13 14:14:11,343 DEBUG [main] cmn.SawonMain     (SawonMain.java:56)     - ---조회성공---
+2022-04-13 14:14:11,343 DEBUG [main] cmn.SawonMain     (SawonMain.java:57)     - ---------------------
+2022-04-13 14:14:11,367 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@7219ec67
+2022-04-13 14:14:11,367 DEBUG [main] cmn.SawonDao      (SawonDao.java:283)     - query:
+ SELECT tt1.rnum as num,                                   
+        tt1.empno,                                         
+        tt1.ename,                                         
+        TO_CHAR(tt1.hiredate,'YYYY/MM/DD') AS hiredate,    
+        tt1.deptno                                         
+ FROM(                                                     
+     SELECT ROWNUM AS rnum, t1.*                           
+     FROM (                                                
+         SELECT *                                          
+         FROM sawon                                        
+         --검색조건                                        
+         ORDER BY hiredate DESC                            
+     )t1                                                   
+     WHERE ROWNUM <= (?*(?-1)+?) 			
+ )tt1                                                   	   
+     WHERE rnum >= (?*(?-1)+1) 			
+
+2022-04-13 14:14:11,368 DEBUG [main] cmn.SawonDao      (SawonDao.java:284)     - param:SearchVO [searchDiv=pcwk8, searchWord=, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:14:11,369 DEBUG [main] cmn.SawonDao      (SawonDao.java:325)     - SQLException: 부적합한 열 인덱스
+2022-04-13 14:14:11,370 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:14:11,370 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:14:11,370 DEBUG [main] cmn.SawonMain     (SawonMain.java:109)     - -------------------------
+2022-04-13 14:14:11,370 DEBUG [main] cmn.SawonMain     (SawonMain.java:110)     -     목록조회 실패   
+2022-04-13 14:14:11,370 DEBUG [main] cmn.SawonMain     (SawonMain.java:111)     - -------------------------
+2022-04-13 14:14:11,395 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@30b7c004
+2022-04-13 14:14:11,395 DEBUG [main] cmn.SawonDao      (SawonDao.java:72)     - query: 
+ SELECT COUNT(*) AS totalCnt	
+FROM sawon					
+
+2022-04-13 14:14:11,395 DEBUG [main] cmn.SawonDao      (SawonDao.java:73)     - param: SearchVO [searchDiv=pcwk8, searchWord=, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:14:11,396 DEBUG [main] cmn.SawonDao      (SawonDao.java:89)     - SQLException: 부적합한 열 인덱스
+2022-04-13 14:14:11,396 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:14:11,396 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:14:11,397 DEBUG [main] cmn.SawonMain     (SawonMain.java:122)     - ----------------------
+2022-04-13 14:14:11,397 DEBUG [main] cmn.SawonMain     (SawonMain.java:123)     - -총글수 :0
+2022-04-13 14:14:11,397 DEBUG [main] cmn.SawonMain     (SawonMain.java:124)     - ----------------------
+2022-04-13 14:21:54,620 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 14:21:54,622 DEBUG [main] cmn.SawonDao      (SawonDao.java:417)     - query : 
+DELETE FROM sawon  
+WHERE empno = ?    
+
+2022-04-13 14:21:54,622 DEBUG [main] cmn.SawonDao      (SawonDao.java:418)     - param : 
+SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:21:54,685 DEBUG [main] cmn.SawonDao      (SawonDao.java:432)     - flag : 1
+2022-04-13 14:21:54,685 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:21:54,685 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:21:54,686 DEBUG [main] cmn.SawonMain     (SawonMain.java:42)     - -------------------------
+2022-04-13 14:21:54,686 DEBUG [main] cmn.SawonMain     (SawonMain.java:43)     -     삭제 성공   
+2022-04-13 14:21:54,686 DEBUG [main] cmn.SawonMain     (SawonMain.java:44)     - -------------------------
+2022-04-13 14:21:54,716 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 14:21:54,716 DEBUG [main] cmn.SawonDao      (SawonDao.java:366)     -  INSERT INTO sawon ( 
+     empno,          
+     ename,          
+     hiredate,       
+     deptno          
+ ) VALUES (          
+     ?,              
+     ?,              
+     sysdate,        
+     ?               
+ )                   
+
+2022-04-13 14:21:54,716 DEBUG [main] cmn.SawonDao      (SawonDao.java:367)     - param: SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 14:21:54,718 DEBUG [main] cmn.SawonDao      (SawonDao.java:382)     - flag : 1
+2022-04-13 14:21:54,718 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:21:54,718 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:21:54,718 DEBUG [main] cmn.SawonMain     (SawonMain.java:29)     - ----------------
+2022-04-13 14:21:54,719 DEBUG [main] cmn.SawonMain     (SawonMain.java:30)     -    등록성공
+2022-04-13 14:21:54,719 DEBUG [main] cmn.SawonMain     (SawonMain.java:31)     - ----------------
+2022-04-13 14:21:54,747 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 14:21:54,747 DEBUG [main] cmn.SawonDao      (SawonDao.java:538)     - query:
+UPDATE sawon			
+SET ename = ?, 		
+hiredate = SYSDATE, 	
+deptno = ?			
+WHERE empno = ?		
+
+2022-04-13 14:21:54,747 DEBUG [main] cmn.SawonDao      (SawonDao.java:539)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:21:54,748 DEBUG [main] cmn.SawonDao      (SawonDao.java:551)     - flag: 1
+2022-04-13 14:21:54,749 DEBUG [main] cmn.SawonMain     (SawonMain.java:87)     - -------------------------
+2022-04-13 14:21:54,749 DEBUG [main] cmn.SawonMain     (SawonMain.java:88)     -     upsert 성공   
+2022-04-13 14:21:54,749 DEBUG [main] cmn.SawonMain     (SawonMain.java:89)     - -------------------------
+2022-04-13 14:21:54,774 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2698dc7
+2022-04-13 14:21:54,774 DEBUG [main] cmn.SawonDao      (SawonDao.java:478)     - query: 
+  SELECT empno,                                             
+    	  ename,                                             
+        TO_CHAR(hiredate,'YYYY/MM/DD HH24:MI:SS') hiredate,
+    	  deptno                                             
+ FROM sawon                                           	 
+ WHERE empno = ?                                     		 
+
+2022-04-13 14:21:54,775 DEBUG [main] cmn.SawonDao      (SawonDao.java:479)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:21:54,814 DEBUG [main] cmn.SawonDao      (SawonDao.java:499)     - outVO:SawonVO [empno=9001, ename=kakaoUU, hiredate=2022/04/13 14:21:54, deptno=23, toString()=DTO [no=0]]
+2022-04-13 14:21:54,814 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:21:54,814 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:21:54,814 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:21:54,815 DEBUG [main] cmn.SawonMain     (SawonMain.java:55)     - ---------------------
+2022-04-13 14:21:54,815 DEBUG [main] cmn.SawonMain     (SawonMain.java:56)     - ---조회성공---
+2022-04-13 14:21:54,815 DEBUG [main] cmn.SawonMain     (SawonMain.java:57)     - ---------------------
+2022-04-13 14:21:54,852 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@7b227d8d
+2022-04-13 14:21:54,852 DEBUG [main] cmn.SawonDao      (SawonDao.java:283)     - query:
+ SELECT tt1.rnum as num,                                   
+        tt1.empno,                                         
+        tt1.ename,                                         
+        TO_CHAR(tt1.hiredate,'YYYY/MM/DD') AS hiredate,    
+        tt1.deptno                                         
+ FROM(                                                     
+     SELECT ROWNUM AS rnum, t1.*                           
+     FROM (                                                
+         SELECT *                                          
+         FROM sawon                                        
+WHERE ename LIKE ? ||'%'          --검색조건                                        
+         ORDER BY hiredate DESC                            
+     )t1                                                   
+     WHERE ROWNUM <= (?*(?-1)+?) 			
+ )tt1                                                   	   
+     WHERE rnum >= (?*(?-1)+1) 			
+
+2022-04-13 14:21:54,852 DEBUG [main] cmn.SawonDao      (SawonDao.java:284)     - param:SearchVO [searchDiv=20, searchWord=pcwk8, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:21:54,864 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:21:54,864 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:21:54,864 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:21:54,865 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8000, ename=pcwk8000, hiredate=2000/05/11, deptno=10, toString()=DTO [no=1]]
+2022-04-13 14:21:54,865 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8001, ename=pcwk8001, hiredate=2000/05/10, deptno=20, toString()=DTO [no=2]]
+2022-04-13 14:21:54,865 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8002, ename=pcwk8002, hiredate=2000/05/09, deptno=10, toString()=DTO [no=3]]
+2022-04-13 14:21:54,865 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8003, ename=pcwk8003, hiredate=2000/05/08, deptno=20, toString()=DTO [no=4]]
+2022-04-13 14:21:54,865 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8004, ename=pcwk8004, hiredate=2000/05/07, deptno=10, toString()=DTO [no=5]]
+2022-04-13 14:21:54,865 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8005, ename=pcwk8005, hiredate=2000/05/06, deptno=20, toString()=DTO [no=6]]
+2022-04-13 14:21:54,866 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8006, ename=pcwk8006, hiredate=2000/05/05, deptno=10, toString()=DTO [no=7]]
+2022-04-13 14:21:54,866 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8007, ename=pcwk8007, hiredate=2000/05/04, deptno=20, toString()=DTO [no=8]]
+2022-04-13 14:21:54,866 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8008, ename=pcwk8008, hiredate=2000/05/03, deptno=10, toString()=DTO [no=9]]
+2022-04-13 14:21:54,866 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8009, ename=pcwk8009, hiredate=2000/05/02, deptno=20, toString()=DTO [no=10]]
+2022-04-13 14:21:54,896 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@65d6b83b
+2022-04-13 14:21:54,897 DEBUG [main] cmn.SawonDao      (SawonDao.java:72)     - query: 
+ SELECT COUNT(*) AS totalCnt	
+FROM sawon					
+WHERE ename LIKE ? ||'%' 
+2022-04-13 14:21:54,897 DEBUG [main] cmn.SawonDao      (SawonDao.java:73)     - param: SearchVO [searchDiv=20, searchWord=pcwk8, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 14:21:54,898 DEBUG [main] cmn.SawonDao      (SawonDao.java:87)     - totalCnt: 1000
+2022-04-13 14:21:54,898 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:21:54,899 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:21:54,899 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:21:54,899 DEBUG [main] cmn.SawonMain     (SawonMain.java:118)     - ----------------------
+2022-04-13 14:21:54,899 DEBUG [main] cmn.SawonMain     (SawonMain.java:119)     - -총글수(성공) :1000
+2022-04-13 14:21:54,899 DEBUG [main] cmn.SawonMain     (SawonMain.java:120)     - ----------------------
+2022-04-13 14:36:16,877 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 14:36:16,879 DEBUG [main] board.BoardDao    (BoardDao.java:111)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 14:36:16,879 DEBUG [main] board.BoardDao    (BoardDao.java:112)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:36:16,941 DEBUG [main] board.BoardDao    (BoardDao.java:123)     - flag : 1
+2022-04-13 14:36:16,942 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:36:16,942 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:36:16,943 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 14:36:16,943 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 14:36:16,943 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 14:36:16,966 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 14:36:16,966 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 14:36:16,966 DEBUG [main] board.BoardDao    (BoardDao.java:60)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:36:16,968 DEBUG [main] board.BoardDao    (BoardDao.java:76)     - flag : 1
+2022-04-13 14:36:16,968 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:36:16,968 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:36:16,969 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 14:36:16,970 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 14:36:16,970 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 14:36:51,698 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 14:36:51,700 DEBUG [main] board.BoardDao    (BoardDao.java:111)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 14:36:51,700 DEBUG [main] board.BoardDao    (BoardDao.java:112)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:36:51,759 DEBUG [main] board.BoardDao    (BoardDao.java:123)     - flag : 1
+2022-04-13 14:36:51,760 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:36:51,760 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:36:51,760 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 14:36:51,761 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 14:36:51,761 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 14:36:51,787 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 14:36:51,787 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 14:36:51,787 DEBUG [main] board.BoardDao    (BoardDao.java:60)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:36:51,789 DEBUG [main] board.BoardDao    (BoardDao.java:76)     - flag : 1
+2022-04-13 14:36:51,789 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:36:51,789 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:36:51,790 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 14:36:51,790 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 14:36:51,790 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 14:36:51,814 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 14:36:51,814 DEBUG [main] board.BoardDao    (BoardDao.java:167)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 14:36:51,814 DEBUG [main] board.BoardDao    (BoardDao.java:168)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:36:51,857 DEBUG [main] board.BoardDao    (BoardDao.java:192)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:36:51,857 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:36:51,857 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:36:51,857 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:36:51,858 DEBUG [main] board.BoardMain   (BoardMain.java:55)     - ---------------------
+2022-04-13 14:36:51,858 DEBUG [main] board.BoardMain   (BoardMain.java:56)     - ---조회실패---
+2022-04-13 14:36:51,858 DEBUG [main] board.BoardMain   (BoardMain.java:57)     - ---------------------
+2022-04-13 14:44:12,588 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 14:44:12,589 DEBUG [main] board.BoardDao    (BoardDao.java:111)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 14:44:12,590 DEBUG [main] board.BoardDao    (BoardDao.java:112)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:44:12,647 DEBUG [main] board.BoardDao    (BoardDao.java:123)     - flag : 1
+2022-04-13 14:44:12,648 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:44:12,648 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:44:12,648 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 14:44:12,648 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 14:44:12,648 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 14:44:12,674 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 14:44:12,674 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 14:44:12,674 DEBUG [main] board.BoardDao    (BoardDao.java:60)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:44:12,676 DEBUG [main] board.BoardDao    (BoardDao.java:76)     - flag : 1
+2022-04-13 14:44:12,676 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:44:12,676 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:44:12,676 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 14:44:12,677 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 14:44:12,677 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 14:44:12,701 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 14:44:12,702 DEBUG [main] board.BoardDao    (BoardDao.java:167)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 14:44:12,702 DEBUG [main] board.BoardDao    (BoardDao.java:168)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:44:12,746 DEBUG [main] board.BoardDao    (BoardDao.java:192)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:44:12,746 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:44:12,746 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:44:12,746 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:44:12,747 DEBUG [main] board.BoardMain   (BoardMain.java:70)     - ---------------------
+2022-04-13 14:44:12,747 DEBUG [main] board.BoardMain   (BoardMain.java:71)     - ---조회실패---
+2022-04-13 14:44:12,747 DEBUG [main] board.BoardMain   (BoardMain.java:72)     - ---------------------
+2022-04-13 14:48:08,461 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 14:48:08,462 DEBUG [main] board.BoardDao    (BoardDao.java:111)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 14:48:08,463 DEBUG [main] board.BoardDao    (BoardDao.java:112)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:48:08,524 DEBUG [main] board.BoardDao    (BoardDao.java:123)     - flag : 1
+2022-04-13 14:48:08,524 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:48:08,525 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:48:08,525 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 14:48:08,525 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 14:48:08,525 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 14:48:08,551 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 14:48:08,551 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 14:48:08,551 DEBUG [main] board.BoardDao    (BoardDao.java:60)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:48:08,553 DEBUG [main] board.BoardDao    (BoardDao.java:76)     - flag : 1
+2022-04-13 14:48:08,553 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:48:08,553 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:48:08,554 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 14:48:08,555 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 14:48:08,555 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 14:48:08,583 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 14:48:08,584 DEBUG [main] board.BoardDao    (BoardDao.java:167)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 14:48:08,584 DEBUG [main] board.BoardDao    (BoardDao.java:168)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:48:08,631 DEBUG [main] board.BoardDao    (BoardDao.java:192)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 14:48:08,631 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 14:48:08,632 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 14:48:08,632 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 14:48:08,632 DEBUG [main] board.BoardMain   (BoardMain.java:66)     - ---------------------
+2022-04-13 14:48:08,633 DEBUG [main] board.BoardMain   (BoardMain.java:67)     - ---조회성공---
+2022-04-13 14:48:08,633 DEBUG [main] board.BoardMain   (BoardMain.java:68)     - ---------------------
+2022-04-13 15:13:46,572 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 15:13:46,574 DEBUG [main] board.BoardDao    (BoardDao.java:109)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 15:13:46,574 DEBUG [main] board.BoardDao    (BoardDao.java:110)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:13:46,643 DEBUG [main] board.BoardDao    (BoardDao.java:121)     - flag : 1
+2022-04-13 15:13:46,644 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:13:46,644 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:13:46,645 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 15:13:46,646 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 15:13:46,646 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 15:13:46,674 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 15:13:46,674 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 15:13:46,674 DEBUG [main] board.BoardDao    (BoardDao.java:60)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:13:46,676 DEBUG [main] board.BoardDao    (BoardDao.java:76)     - flag : 1
+2022-04-13 15:13:46,676 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:13:46,676 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:13:46,677 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 15:13:46,678 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 15:13:46,679 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 15:13:46,705 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 15:13:46,705 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:13:46,705 DEBUG [main] board.BoardDao    (BoardDao.java:164)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:13:46,752 DEBUG [main] board.BoardDao    (BoardDao.java:188)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:13:46,752 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:13:46,753 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:13:46,753 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:13:46,753 DEBUG [main] board.BoardMain   (BoardMain.java:66)     - ---------------------
+2022-04-13 15:13:46,754 DEBUG [main] board.BoardMain   (BoardMain.java:67)     - ---조회성공---
+2022-04-13 15:13:46,754 DEBUG [main] board.BoardMain   (BoardMain.java:68)     - ---------------------
+2022-04-13 15:13:46,781 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6ce139a4
+2022-04-13 15:13:46,781 DEBUG [main] board.BoardDao    (BoardDao.java:229)     - query:
+ UPDATE board                 
+ SET title = ?,           	  
+     contents = ?,         	 
+     reg_dt = SYSDATE,        
+     mod_dt = SYSDATE,        
+     mod_id = ?           	  
+ WHERE seq = ?           	  
+
+2022-04-13 15:13:46,781 DEBUG [main] board.BoardDao    (BoardDao.java:230)     - param: BoardVO [seq=1, title=kakao_U, contents=, readCnt=0, regDt=, regId=pcwk, modDt=, modId=, toString()=DTO [no=0]]
+2022-04-13 15:13:46,781 DEBUG [main] board.BoardDao    (BoardDao.java:246)     - SQLException:부적합한 열 인덱스
+2022-04-13 15:13:46,782 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:13:46,782 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:13:46,782 DEBUG [main] board.BoardMain   (BoardMain.java:88)     - -------------------------
+2022-04-13 15:13:46,782 DEBUG [main] board.BoardMain   (BoardMain.java:89)     -     수정 실패   
+2022-04-13 15:13:46,782 DEBUG [main] board.BoardMain   (BoardMain.java:90)     - -------------------------
+2022-04-13 15:14:17,560 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 15:14:17,561 DEBUG [main] board.BoardDao    (BoardDao.java:109)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 15:14:17,561 DEBUG [main] board.BoardDao    (BoardDao.java:110)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:14:17,622 DEBUG [main] board.BoardDao    (BoardDao.java:121)     - flag : 1
+2022-04-13 15:14:17,622 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:14:17,623 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:14:17,623 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 15:14:17,624 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 15:14:17,624 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 15:14:17,656 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 15:14:17,656 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 15:14:17,656 DEBUG [main] board.BoardDao    (BoardDao.java:60)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:14:17,658 DEBUG [main] board.BoardDao    (BoardDao.java:76)     - flag : 1
+2022-04-13 15:14:17,658 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:14:17,658 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:14:17,658 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 15:14:17,659 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 15:14:17,660 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 15:14:17,689 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 15:14:17,689 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:14:17,689 DEBUG [main] board.BoardDao    (BoardDao.java:164)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:14:17,733 DEBUG [main] board.BoardDao    (BoardDao.java:188)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:14:17,733 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:14:17,733 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:14:17,733 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:14:17,734 DEBUG [main] board.BoardMain   (BoardMain.java:66)     - ---------------------
+2022-04-13 15:14:17,734 DEBUG [main] board.BoardMain   (BoardMain.java:67)     - ---조회성공---
+2022-04-13 15:14:17,734 DEBUG [main] board.BoardMain   (BoardMain.java:68)     - ---------------------
+2022-04-13 15:14:17,761 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6ce139a4
+2022-04-13 15:14:17,761 DEBUG [main] board.BoardDao    (BoardDao.java:229)     - query:
+ UPDATE board                 
+ SET title = ?,           	  
+     contents = ?,         	 
+     reg_dt = SYSDATE,        
+     mod_dt = SYSDATE,        
+     mod_id = ?           	  
+ WHERE seq = ?           	  
+
+2022-04-13 15:14:17,761 DEBUG [main] board.BoardDao    (BoardDao.java:230)     - param: BoardVO [seq=1, title=kakao_U, contents=, readCnt=0, regDt=, regId=pcwk, modDt=, modId=, toString()=DTO [no=0]]
+2022-04-13 15:14:17,763 DEBUG [main] board.BoardDao    (BoardDao.java:243)     - flag: 1
+2022-04-13 15:14:17,764 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:14:17,764 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:14:17,765 DEBUG [main] board.BoardMain   (BoardMain.java:84)     - -------------------------
+2022-04-13 15:14:17,765 DEBUG [main] board.BoardMain   (BoardMain.java:85)     -     수정 성공   
+2022-04-13 15:14:17,765 DEBUG [main] board.BoardMain   (BoardMain.java:86)     - -------------------------
+2022-04-13 15:25:16,890 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 15:25:16,891 DEBUG [main] board.BoardDao    (BoardDao.java:109)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 15:25:16,891 DEBUG [main] board.BoardDao    (BoardDao.java:110)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:25:16,949 DEBUG [main] board.BoardDao    (BoardDao.java:121)     - flag : 1
+2022-04-13 15:25:16,950 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:25:16,950 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:25:16,951 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 15:25:16,951 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 15:25:16,951 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 15:25:16,977 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 15:25:16,977 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 15:25:16,977 DEBUG [main] board.BoardDao    (BoardDao.java:60)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:25:16,979 DEBUG [main] board.BoardDao    (BoardDao.java:76)     - flag : 1
+2022-04-13 15:25:16,979 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:25:16,979 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:25:16,979 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 15:25:16,980 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 15:25:16,980 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 15:25:17,006 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 15:25:17,006 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:25:17,006 DEBUG [main] board.BoardDao    (BoardDao.java:164)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:25:17,045 DEBUG [main] board.BoardDao    (BoardDao.java:188)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:25:17,045 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:25:17,046 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:25:17,046 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:25:17,047 DEBUG [main] board.BoardMain   (BoardMain.java:66)     - ---------------------
+2022-04-13 15:25:17,047 DEBUG [main] board.BoardMain   (BoardMain.java:67)     - ---조회성공---
+2022-04-13 15:25:17,047 DEBUG [main] board.BoardMain   (BoardMain.java:68)     - ---------------------
+2022-04-13 15:25:17,079 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6973bf95
+2022-04-13 15:25:17,079 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:25:17,079 DEBUG [main] board.BoardDao    (BoardDao.java:164)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:25:17,080 DEBUG [main] board.BoardDao    (BoardDao.java:188)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:25:17,081 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:25:17,081 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:25:17,081 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:25:17,106 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@229d10bd
+2022-04-13 15:25:17,107 DEBUG [main] board.BoardDao    (BoardDao.java:229)     - query:
+ UPDATE board                 
+ SET title = ?,           	  
+     contents = ?,         	 
+     reg_dt = SYSDATE,        
+     mod_dt = SYSDATE,        
+     mod_id = ?           	  
+ WHERE seq = ?           	  
+
+2022-04-13 15:25:17,107 DEBUG [main] board.BoardDao    (BoardDao.java:230)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:25:17,109 DEBUG [main] board.BoardDao    (BoardDao.java:243)     - flag: 1
+2022-04-13 15:25:17,109 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:25:17,109 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:25:17,131 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@33afa13b
+2022-04-13 15:25:17,132 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:25:17,132 DEBUG [main] board.BoardDao    (BoardDao.java:164)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 15:25:17,133 DEBUG [main] board.BoardDao    (BoardDao.java:188)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=2022/04/13 15:25:17, regId=pcwk, modDt=2022/04/13 15:25:17, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:25:17,133 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:25:17,133 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:25:17,133 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:25:17,134 DEBUG [main] board.BoardMain   (BoardMain.java:95)     - -------------------------
+2022-04-13 15:25:17,134 DEBUG [main] board.BoardMain   (BoardMain.java:96)     -     수정 실패   
+2022-04-13 15:25:17,135 DEBUG [main] board.BoardMain   (BoardMain.java:97)     - -------------------------
+2022-04-13 15:26:17,001 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 15:26:17,002 DEBUG [main] board.BoardDao    (BoardDao.java:109)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 15:26:17,003 DEBUG [main] board.BoardDao    (BoardDao.java:110)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:26:17,057 DEBUG [main] board.BoardDao    (BoardDao.java:121)     - flag : 1
+2022-04-13 15:26:17,058 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:26:17,058 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:26:17,059 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 15:26:17,059 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 15:26:17,059 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 15:26:17,089 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 15:26:17,089 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 15:26:17,089 DEBUG [main] board.BoardDao    (BoardDao.java:60)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:26:17,092 DEBUG [main] board.BoardDao    (BoardDao.java:76)     - flag : 1
+2022-04-13 15:26:17,092 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:26:17,092 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:26:17,093 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 15:26:17,093 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 15:26:17,093 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 15:26:17,123 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 15:26:17,124 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:26:17,124 DEBUG [main] board.BoardDao    (BoardDao.java:164)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:26:17,162 DEBUG [main] board.BoardDao    (BoardDao.java:188)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:26:17,162 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:26:17,162 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:26:17,162 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:26:17,163 DEBUG [main] board.BoardMain   (BoardMain.java:66)     - ---------------------
+2022-04-13 15:26:17,163 DEBUG [main] board.BoardMain   (BoardMain.java:67)     - ---조회성공---
+2022-04-13 15:26:17,163 DEBUG [main] board.BoardMain   (BoardMain.java:68)     - ---------------------
+2022-04-13 15:26:17,188 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6ce139a4
+2022-04-13 15:26:17,188 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:26:17,188 DEBUG [main] board.BoardDao    (BoardDao.java:164)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:26:17,190 DEBUG [main] board.BoardDao    (BoardDao.java:188)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:26:17,190 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:26:17,190 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:26:17,190 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:26:17,215 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2ddc8ecb
+2022-04-13 15:26:17,216 DEBUG [main] board.BoardDao    (BoardDao.java:229)     - query:
+ UPDATE board                 
+ SET title = ?,           	  
+     contents = ?,         	 
+     reg_dt = SYSDATE,        
+     mod_dt = SYSDATE,        
+     mod_id = ?           	  
+ WHERE seq = ?           	  
+
+2022-04-13 15:26:17,216 DEBUG [main] board.BoardDao    (BoardDao.java:230)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 15:26:17,217 DEBUG [main] board.BoardDao    (BoardDao.java:243)     - flag: 1
+2022-04-13 15:26:17,217 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:26:17,217 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:26:17,243 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@47542153
+2022-04-13 15:26:17,243 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:26:17,243 DEBUG [main] board.BoardDao    (BoardDao.java:164)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 15:26:17,244 DEBUG [main] board.BoardDao    (BoardDao.java:188)     - outVO:BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=2022/04/13 15:26:17, regId=pcwk, modDt=2022/04/13 15:26:17, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 15:26:17,244 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:26:17,244 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:26:17,245 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:26:17,245 DEBUG [main] board.BoardMain   (BoardMain.java:91)     - -------------------------
+2022-04-13 15:26:17,245 DEBUG [main] board.BoardMain   (BoardMain.java:92)     -     수정 성공   
+2022-04-13 15:26:17,245 DEBUG [main] board.BoardMain   (BoardMain.java:93)     - -------------------------
+2022-04-13 15:54:38,338 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 15:54:38,339 DEBUG [main] board.BoardDao    (BoardDao.java:172)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 15:54:38,339 DEBUG [main] board.BoardDao    (BoardDao.java:173)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:54:38,396 DEBUG [main] board.BoardDao    (BoardDao.java:184)     - flag : 1
+2022-04-13 15:54:38,396 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:54:38,397 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:54:38,397 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 15:54:38,397 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 15:54:38,397 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 15:54:38,421 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 15:54:38,421 DEBUG [main] board.BoardDao    (BoardDao.java:122)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 15:54:38,421 DEBUG [main] board.BoardDao    (BoardDao.java:123)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:54:38,423 DEBUG [main] board.BoardDao    (BoardDao.java:139)     - flag : 1
+2022-04-13 15:54:38,423 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:54:38,423 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:54:38,423 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 15:54:38,424 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 15:54:38,424 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 15:54:38,452 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 15:54:38,452 DEBUG [main] board.BoardDao    (BoardDao.java:226)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:54:38,452 DEBUG [main] board.BoardDao    (BoardDao.java:227)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:54:38,500 DEBUG [main] board.BoardDao    (BoardDao.java:251)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:54:38,500 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:54:38,500 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:54:38,500 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:54:38,501 DEBUG [main] board.BoardMain   (BoardMain.java:66)     - ---------------------
+2022-04-13 15:54:38,501 DEBUG [main] board.BoardMain   (BoardMain.java:67)     - ---조회성공---
+2022-04-13 15:54:38,501 DEBUG [main] board.BoardMain   (BoardMain.java:68)     - ---------------------
+2022-04-13 15:54:38,524 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6ce139a4
+2022-04-13 15:54:38,524 DEBUG [main] board.BoardDao    (BoardDao.java:226)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:54:38,524 DEBUG [main] board.BoardDao    (BoardDao.java:227)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:54:38,525 DEBUG [main] board.BoardDao    (BoardDao.java:251)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:54:38,525 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:54:38,525 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:54:38,525 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:54:38,551 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2ddc8ecb
+2022-04-13 15:54:38,551 DEBUG [main] board.BoardDao    (BoardDao.java:292)     - query:
+ UPDATE board                 
+ SET title = ?,           	  
+     contents = ?,         	 
+     reg_dt = SYSDATE,        
+     mod_dt = SYSDATE,        
+     mod_id = ?           	  
+ WHERE seq = ?           	  
+
+2022-04-13 15:54:38,551 DEBUG [main] board.BoardDao    (BoardDao.java:293)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 15:54:38,552 DEBUG [main] board.BoardDao    (BoardDao.java:306)     - flag: 1
+2022-04-13 15:54:38,552 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:54:38,552 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:54:38,577 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@33afa13b
+2022-04-13 15:54:38,577 DEBUG [main] board.BoardDao    (BoardDao.java:226)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:54:38,577 DEBUG [main] board.BoardDao    (BoardDao.java:227)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 15:54:38,579 DEBUG [main] board.BoardDao    (BoardDao.java:251)     - outVO:BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=2022/04/13 15:54:38, regId=pcwk, modDt=2022/04/13 15:54:38, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 15:54:38,579 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:54:38,579 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:54:38,580 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:54:38,580 DEBUG [main] board.BoardMain   (BoardMain.java:91)     - -------------------------
+2022-04-13 15:54:38,580 DEBUG [main] board.BoardMain   (BoardMain.java:92)     -     수정 성공   
+2022-04-13 15:54:38,580 DEBUG [main] board.BoardMain   (BoardMain.java:93)     - -------------------------
+2022-04-13 15:54:38,602 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@309e345f
+2022-04-13 15:54:38,602 DEBUG [main] board.BoardDao    (BoardDao.java:50)     - query:
+ UPDATE board                 
+ SET title = ?,           	  
+     contents = ?,         	 
+     reg_dt = SYSDATE,        
+     mod_dt = SYSDATE,        
+     mod_id = ?           	  
+ WHERE seq = ?           	  
+
+2022-04-13 15:54:38,602 DEBUG [main] board.BoardDao    (BoardDao.java:51)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:54:38,603 DEBUG [main] board.BoardDao    (BoardDao.java:64)     - flag: 1
+2022-04-13 15:54:38,603 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:54:38,603 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:54:38,628 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@18ce0030
+2022-04-13 15:54:38,628 DEBUG [main] board.BoardDao    (BoardDao.java:226)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 15:54:38,628 DEBUG [main] board.BoardDao    (BoardDao.java:227)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:54:38,629 DEBUG [main] board.BoardDao    (BoardDao.java:251)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=2022/04/13 15:54:38, regId=pcwk, modDt=2022/04/13 15:54:38, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 15:54:38,629 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 15:54:38,629 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 15:54:38,629 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 15:54:38,630 DEBUG [main] board.BoardMain   (BoardMain.java:110)     - ------------------
+2022-04-13 15:54:38,630 DEBUG [main] board.BoardMain   (BoardMain.java:111)     - --조회 count 증가 실패--
+2022-04-13 15:54:38,630 DEBUG [main] board.BoardMain   (BoardMain.java:112)     - ------------------
+2022-04-13 16:07:39,732 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 16:07:39,734 DEBUG [main] board.BoardDao    (BoardDao.java:162)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 16:07:39,734 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:39,796 DEBUG [main] board.BoardDao    (BoardDao.java:174)     - flag : 1
+2022-04-13 16:07:39,797 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:39,797 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:39,798 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 16:07:39,798 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 16:07:39,798 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 16:07:39,823 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 16:07:39,823 DEBUG [main] board.BoardDao    (BoardDao.java:112)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 16:07:39,823 DEBUG [main] board.BoardDao    (BoardDao.java:113)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:39,825 DEBUG [main] board.BoardDao    (BoardDao.java:129)     - flag : 1
+2022-04-13 16:07:39,825 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:39,825 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:39,826 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 16:07:39,826 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 16:07:39,826 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 16:07:39,850 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 16:07:39,850 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:07:39,850 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:39,894 DEBUG [main] board.BoardDao    (BoardDao.java:241)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:39,894 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:07:39,894 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:39,894 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:39,895 DEBUG [main] board.BoardMain   (BoardMain.java:66)     - ---------------------
+2022-04-13 16:07:39,895 DEBUG [main] board.BoardMain   (BoardMain.java:67)     - ---조회성공---
+2022-04-13 16:07:39,895 DEBUG [main] board.BoardMain   (BoardMain.java:68)     - ---------------------
+2022-04-13 16:07:39,920 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6ce139a4
+2022-04-13 16:07:39,920 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:07:39,920 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:39,921 DEBUG [main] board.BoardDao    (BoardDao.java:241)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:39,921 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:07:39,921 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:39,921 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:39,945 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2ddc8ecb
+2022-04-13 16:07:39,945 DEBUG [main] board.BoardDao    (BoardDao.java:282)     - query:
+ UPDATE board                 
+ SET title = ?,           	  
+     contents = ?,         	 
+     reg_dt = SYSDATE,        
+     mod_dt = SYSDATE,        
+     mod_id = ?           	  
+ WHERE seq = ?           	  
+
+2022-04-13 16:07:39,946 DEBUG [main] board.BoardDao    (BoardDao.java:283)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:07:39,947 DEBUG [main] board.BoardDao    (BoardDao.java:296)     - flag: 1
+2022-04-13 16:07:39,947 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:39,947 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:39,972 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@33afa13b
+2022-04-13 16:07:39,972 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:07:39,972 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:07:39,973 DEBUG [main] board.BoardDao    (BoardDao.java:241)     - outVO:BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=2022/04/13 16:07:39, regId=pcwk, modDt=2022/04/13 16:07:39, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:07:39,974 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:07:39,974 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:39,974 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:39,975 DEBUG [main] board.BoardMain   (BoardMain.java:91)     - -------------------------
+2022-04-13 16:07:39,975 DEBUG [main] board.BoardMain   (BoardMain.java:92)     -     수정 성공   
+2022-04-13 16:07:39,975 DEBUG [main] board.BoardMain   (BoardMain.java:93)     - -------------------------
+2022-04-13 16:07:39,998 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@309e345f
+2022-04-13 16:07:39,998 DEBUG [main] board.BoardDao    (BoardDao.java:47)     - query: 
+UPDATE board                
+SET read_cnt = read_cnt + 1 
+WHERE seq = ?               
+
+2022-04-13 16:07:39,998 DEBUG [main] board.BoardDao    (BoardDao.java:48)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:40,001 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - flag: 1
+2022-04-13 16:07:40,001 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:40,001 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:40,024 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@18ce0030
+2022-04-13 16:07:40,024 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:07:40,024 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:40,025 DEBUG [main] board.BoardDao    (BoardDao.java:241)     - outVO:BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=1, regDt=2022/04/13 16:07:39, regId=pcwk, modDt=2022/04/13 16:07:39, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:07:40,025 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:07:40,025 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:40,025 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:40,026 DEBUG [main] board.BoardMain   (BoardMain.java:106)     - ------------------
+2022-04-13 16:07:40,026 DEBUG [main] board.BoardMain   (BoardMain.java:107)     - --조회 count 증가 성공--
+2022-04-13 16:07:40,026 DEBUG [main] board.BoardMain   (BoardMain.java:108)     - ------------------
+2022-04-13 16:07:53,091 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 16:07:53,093 DEBUG [main] board.BoardDao    (BoardDao.java:162)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 16:07:53,093 DEBUG [main] board.BoardDao    (BoardDao.java:163)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:53,159 DEBUG [main] board.BoardDao    (BoardDao.java:174)     - flag : 1
+2022-04-13 16:07:53,160 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:53,160 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:53,161 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 16:07:53,161 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 16:07:53,161 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 16:07:53,192 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 16:07:53,192 DEBUG [main] board.BoardDao    (BoardDao.java:112)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 16:07:53,192 DEBUG [main] board.BoardDao    (BoardDao.java:113)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:53,195 DEBUG [main] board.BoardDao    (BoardDao.java:129)     - flag : 1
+2022-04-13 16:07:53,195 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:53,195 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:53,196 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 16:07:53,197 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 16:07:53,197 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 16:07:53,223 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 16:07:53,224 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:07:53,224 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:53,266 DEBUG [main] board.BoardDao    (BoardDao.java:241)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:53,266 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:07:53,266 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:53,267 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:53,267 DEBUG [main] board.BoardMain   (BoardMain.java:66)     - ---------------------
+2022-04-13 16:07:53,267 DEBUG [main] board.BoardMain   (BoardMain.java:67)     - ---조회성공---
+2022-04-13 16:07:53,267 DEBUG [main] board.BoardMain   (BoardMain.java:68)     - ---------------------
+2022-04-13 16:07:53,292 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6ce139a4
+2022-04-13 16:07:53,292 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:07:53,292 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:53,293 DEBUG [main] board.BoardDao    (BoardDao.java:241)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:53,293 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:07:53,293 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:53,293 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:53,320 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@229d10bd
+2022-04-13 16:07:53,320 DEBUG [main] board.BoardDao    (BoardDao.java:282)     - query:
+ UPDATE board                 
+ SET title = ?,           	  
+     contents = ?,         	 
+     reg_dt = SYSDATE,        
+     mod_dt = SYSDATE,        
+     mod_id = ?           	  
+ WHERE seq = ?           	  
+
+2022-04-13 16:07:53,320 DEBUG [main] board.BoardDao    (BoardDao.java:283)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:07:53,322 DEBUG [main] board.BoardDao    (BoardDao.java:296)     - flag: 1
+2022-04-13 16:07:53,322 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:53,322 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:53,346 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@33afa13b
+2022-04-13 16:07:53,346 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:07:53,346 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:07:53,348 DEBUG [main] board.BoardDao    (BoardDao.java:241)     - outVO:BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=2022/04/13 16:07:53, regId=pcwk, modDt=2022/04/13 16:07:53, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:07:53,348 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:07:53,348 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:53,348 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:53,348 DEBUG [main] board.BoardMain   (BoardMain.java:91)     - -------------------------
+2022-04-13 16:07:53,349 DEBUG [main] board.BoardMain   (BoardMain.java:92)     -     수정 성공   
+2022-04-13 16:07:53,349 DEBUG [main] board.BoardMain   (BoardMain.java:93)     - -------------------------
+2022-04-13 16:07:53,370 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@309e345f
+2022-04-13 16:07:53,370 DEBUG [main] board.BoardDao    (BoardDao.java:47)     - query: 
+UPDATE board                
+SET read_cnt = read_cnt + 1 
+WHERE seq = ?               
+
+2022-04-13 16:07:53,370 DEBUG [main] board.BoardDao    (BoardDao.java:48)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:53,371 DEBUG [main] board.BoardDao    (BoardDao.java:59)     - flag: 1
+2022-04-13 16:07:53,371 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:53,371 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:53,401 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@18ce0030
+2022-04-13 16:07:53,402 DEBUG [main] board.BoardDao    (BoardDao.java:216)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:07:53,402 DEBUG [main] board.BoardDao    (BoardDao.java:217)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:07:53,403 DEBUG [main] board.BoardDao    (BoardDao.java:241)     - outVO:BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=1, regDt=2022/04/13 16:07:53, regId=pcwk, modDt=2022/04/13 16:07:53, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:07:53,403 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:07:53,403 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:07:53,403 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:07:53,404 DEBUG [main] board.BoardMain   (BoardMain.java:106)     - ------------------
+2022-04-13 16:07:53,404 DEBUG [main] board.BoardMain   (BoardMain.java:107)     - --조회 count 증가 성공--
+2022-04-13 16:07:53,404 DEBUG [main] board.BoardMain   (BoardMain.java:108)     - ------------------
+2022-04-13 16:30:19,554 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 16:30:19,556 DEBUG [main] board.BoardDao    (BoardDao.java:270)     - query: 
+DELETE FROM board 
+WHERE SEQ = ? 	
+
+2022-04-13 16:30:19,556 DEBUG [main] board.BoardDao    (BoardDao.java:271)     - param:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:30:19,622 DEBUG [main] board.BoardDao    (BoardDao.java:282)     - flag : 1
+2022-04-13 16:30:19,623 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:30:19,623 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:30:19,624 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - --------------
+2022-04-13 16:30:19,624 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - -삭제성공-
+2022-04-13 16:30:19,624 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - --------------
+2022-04-13 16:30:19,649 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 16:30:19,649 DEBUG [main] board.BoardDao    (BoardDao.java:220)     - query: 
+ INSERT INTO board (    
+     seq,               
+     title,             
+     contents,          
+     read_cnt,          
+     reg_id,            
+     mod_id             
+ ) VALUES (             
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?                
+ )                      
+
+2022-04-13 16:30:19,649 DEBUG [main] board.BoardDao    (BoardDao.java:221)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:30:19,651 DEBUG [main] board.BoardDao    (BoardDao.java:237)     - flag : 1
+2022-04-13 16:30:19,651 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:30:19,651 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:30:19,651 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - -------------
+2022-04-13 16:30:19,653 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - -등록성공-
+2022-04-13 16:30:19,654 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - -------------
+2022-04-13 16:30:19,681 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 16:30:19,682 DEBUG [main] board.BoardDao    (BoardDao.java:324)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:30:19,682 DEBUG [main] board.BoardDao    (BoardDao.java:325)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:30:19,729 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:30:19,730 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:30:19,730 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:30:19,730 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:30:19,731 DEBUG [main] board.BoardMain   (BoardMain.java:66)     - ---------------------
+2022-04-13 16:30:19,731 DEBUG [main] board.BoardMain   (BoardMain.java:67)     - ---조회성공---
+2022-04-13 16:30:19,731 DEBUG [main] board.BoardMain   (BoardMain.java:68)     - ---------------------
+2022-04-13 16:30:19,760 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6ce139a4
+2022-04-13 16:30:19,760 DEBUG [main] board.BoardDao    (BoardDao.java:324)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:30:19,760 DEBUG [main] board.BoardDao    (BoardDao.java:325)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:30:19,762 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - outVO:BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:30:19,762 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:30:19,762 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:30:19,762 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:30:19,790 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2ddc8ecb
+2022-04-13 16:30:19,790 DEBUG [main] board.BoardDao    (BoardDao.java:390)     - query:
+ UPDATE board                 
+ SET title = ?,           	  
+     contents = ?,         	 
+     reg_dt = SYSDATE,        
+     mod_dt = SYSDATE,        
+     mod_id = ?           	  
+ WHERE seq = ?           	  
+
+2022-04-13 16:30:19,790 DEBUG [main] board.BoardDao    (BoardDao.java:391)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:30:19,792 DEBUG [main] board.BoardDao    (BoardDao.java:404)     - flag: 1
+2022-04-13 16:30:19,792 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:30:19,792 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:30:19,819 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@47542153
+2022-04-13 16:30:19,819 DEBUG [main] board.BoardDao    (BoardDao.java:324)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:30:19,819 DEBUG [main] board.BoardDao    (BoardDao.java:325)     - param: BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=null, regId=pcwk, modDt=null, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:30:19,820 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - outVO:BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=0, regDt=2022/04/13 16:30:19, regId=pcwk, modDt=2022/04/13 16:30:19, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:30:19,821 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:30:19,821 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:30:19,821 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:30:19,822 DEBUG [main] board.BoardMain   (BoardMain.java:91)     - -------------------------
+2022-04-13 16:30:19,822 DEBUG [main] board.BoardMain   (BoardMain.java:92)     -     수정 성공   
+2022-04-13 16:30:19,822 DEBUG [main] board.BoardMain   (BoardMain.java:93)     - -------------------------
+2022-04-13 16:30:19,849 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@7a4ccb53
+2022-04-13 16:30:19,849 DEBUG [main] board.BoardDao    (BoardDao.java:49)     - query: 
+UPDATE board                
+SET read_cnt = read_cnt + 1 
+WHERE seq = ?               
+
+2022-04-13 16:30:19,849 DEBUG [main] board.BoardDao    (BoardDao.java:50)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:30:19,850 DEBUG [main] board.BoardDao    (BoardDao.java:61)     - flag: 1
+2022-04-13 16:30:19,850 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:30:19,850 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:30:19,875 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@56a6d5a6
+2022-04-13 16:30:19,875 DEBUG [main] board.BoardDao    (BoardDao.java:324)     - query: 
+  SELECT                                                     
+     seq,                                                   
+     title,                                                 
+     contents,                                              
+     read_cnt,                                              
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt,     
+     reg_id,                                                
+     TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') AS mod_dt,     
+     mod_id                                                 
+ FROM                                                       
+     board                                                  
+ WHERE seq = ?										  
+
+2022-04-13 16:30:19,875 DEBUG [main] board.BoardDao    (BoardDao.java:325)     - param: BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-04-13 16:30:19,876 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - outVO:BoardVO [seq=900001, title=제목_900001_u, contents=내용_900001_u, readCnt=1, regDt=2022/04/13 16:30:19, regId=pcwk, modDt=2022/04/13 16:30:19, modId=pcwk_u, toString()=DTO [no=0]]
+2022-04-13 16:30:19,876 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:30:19,876 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:30:19,876 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:30:19,878 DEBUG [main] board.BoardMain   (BoardMain.java:106)     - ------------------
+2022-04-13 16:30:19,878 DEBUG [main] board.BoardMain   (BoardMain.java:107)     - --조회 count 증가 성공--
+2022-04-13 16:30:19,878 DEBUG [main] board.BoardMain   (BoardMain.java:108)     - ------------------
+2022-04-13 16:51:06,035 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 16:51:06,037 DEBUG [main] board.BoardDao    (BoardDao.java:137)     - query:
+SELECT A.SEQ,                                      
+       A.RNUM AS NUM,                              
+       A.TITLE AS TITLE,                           
+		  A.Read_CNT,								  
+       TO_CHAR(A.MOD_DT,'YYYY/MM/DD') AS MOD_DT,   
+       A.MOD_ID                                    
+FROM (                                             
+    SELECT ROWNUM AS RNUM, T1.*                    
+    FROM (                                         
+        SELECT *                                   
+        FROM board                                 
+         --검색조건                                        
+         ORDER BY mod_dt DESC                      
+     )T1                                           
+     WHERE ROWNUM <= (?*(?-1)+?)                             
+ )A                                                
+ WHERE RNUM >= (?*(?-1)+1)                                   
+
+2022-04-13 16:51:06,037 DEBUG [main] board.BoardDao    (BoardDao.java:138)     - param:SearchVO [searchDiv=, searchWord=, pageSize=20, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 16:51:06,483 DEBUG [main] board.BoardDao    (BoardDao.java:205)     - SQLException: 부적합한 열 이름
+2022-04-13 16:51:06,484 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:51:06,484 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:51:06,484 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:51:06,485 DEBUG [main] board.BoardMain   (BoardMain.java:129)     - -------------------------
+2022-04-13 16:51:06,485 DEBUG [main] board.BoardMain   (BoardMain.java:130)     -     목록조회 실패   
+2022-04-13 16:51:06,485 DEBUG [main] board.BoardMain   (BoardMain.java:131)     - -------------------------
+2022-04-13 16:59:24,316 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 16:59:24,318 DEBUG [main] board.BoardDao    (BoardDao.java:137)     - query:
+SELECT A.SEQ,                                      
+       A.RNUM AS NUM,                              
+       A.TITLE AS TITLE,                           
+		  A.Read_CNT,								  
+       TO_CHAR(A.MOD_DT,'YYYY/MM/DD') AS MOD_DT,   
+       A.MOD_ID                                    
+FROM (                                             
+    SELECT ROWNUM AS RNUM, T1.*                    
+    FROM (                                         
+        SELECT *                                   
+        FROM board                                 
+         --검색조건                                        
+         ORDER BY mod_dt DESC                      
+     )T1                                           
+     WHERE ROWNUM <= (?*(?-1)+?)                             
+ )A                                                
+ WHERE RNUM >= (?*(?-1)+1)                                   
+
+2022-04-13 16:59:24,318 DEBUG [main] board.BoardDao    (BoardDao.java:138)     - param:SearchVO [searchDiv=, searchWord=, pageSize=20, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 16:59:24,520 DEBUG [main] board.BoardDao    (BoardDao.java:205)     - SQLException: 부적합한 열 이름
+2022-04-13 16:59:24,521 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 16:59:24,521 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 16:59:24,521 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 16:59:24,522 DEBUG [main] board.BoardMain   (BoardMain.java:129)     - -------------------------
+2022-04-13 16:59:24,522 DEBUG [main] board.BoardMain   (BoardMain.java:130)     -     목록조회 실패   
+2022-04-13 16:59:24,522 DEBUG [main] board.BoardMain   (BoardMain.java:131)     - -------------------------
+2022-04-13 17:02:49,832 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 17:02:49,834 DEBUG [main] board.BoardDao    (BoardDao.java:137)     - query:
+SELECT A.SEQ,                                      
+       A.RNUM AS NUM,                              
+       A.TITLE AS TITLE,                           
+		  A.Read_CNT,								  
+       TO_CHAR(A.MOD_DT,'YYYY/MM/DD') AS MOD_DT,   
+       A.MOD_ID                                    
+FROM (                                             
+    SELECT ROWNUM AS RNUM, T1.*                    
+    FROM (                                         
+        SELECT *                                   
+        FROM board                                 
+         --검색조건                                        
+         ORDER BY mod_dt DESC                      
+     )T1                                           
+     WHERE ROWNUM <= (?*(?-1)+?)                             
+ )A                                                
+ WHERE RNUM >= (?*(?-1)+1)                                   
+
+2022-04-13 17:02:49,834 DEBUG [main] board.BoardDao    (BoardDao.java:138)     - param:SearchVO [searchDiv=, searchWord=, pageSize=20, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 17:02:50,029 DEBUG [main] board.BoardDao    (BoardDao.java:205)     - SQLException: 부적합한 열 이름
+2022-04-13 17:02:50,030 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 17:02:50,030 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 17:02:50,030 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 17:02:50,031 DEBUG [main] board.BoardMain   (BoardMain.java:130)     - -------------------------
+2022-04-13 17:02:50,031 DEBUG [main] board.BoardMain   (BoardMain.java:131)     -     목록조회 실패   
+2022-04-13 17:02:50,031 DEBUG [main] board.BoardMain   (BoardMain.java:132)     - -------------------------
+2022-04-13 17:03:42,632 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 17:03:42,633 DEBUG [main] board.BoardDao    (BoardDao.java:137)     - query:
+SELECT A.SEQ,                                      
+       A.RNUM AS NUM,                              
+       A.TITLE AS TITLE,                           
+		  A.Read_CNT,								  
+       TO_CHAR(A.MOD_DT,'YYYY/MM/DD') AS MOD_DT,   
+       A.MOD_ID                                    
+FROM (                                             
+    SELECT ROWNUM AS RNUM, T1.*                    
+    FROM (                                         
+        SELECT *                                   
+        FROM board                                 
+         --검색조건                                        
+         ORDER BY mod_dt DESC                      
+     )T1                                           
+     WHERE ROWNUM <= (?*(?-1)+?)                             
+ )A                                                
+ WHERE RNUM >= (?*(?-1)+1)                                   
+
+2022-04-13 17:03:42,633 DEBUG [main] board.BoardDao    (BoardDao.java:138)     - param:SearchVO [searchDiv=, searchWord=, pageSize=20, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 17:03:42,822 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 17:03:42,822 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 17:03:42,823 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 17:03:42,824 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=900001, title=제목_900001_u, contents=null, readCnt=1, regDt=null, regId=null, modDt=2022/04/13, modId=pcwk_u, toString()=DTO [no=1]]
+2022-04-13 17:03:42,824 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=1, title=kakao_U, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=null, toString()=DTO [no=2]]
+2022-04-13 17:03:42,824 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=2, title=제목2, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=3]]
+2022-04-13 17:03:42,824 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=3, title=제목3, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=4]]
+2022-04-13 17:03:42,824 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=4, title=제목4, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=5]]
+2022-04-13 17:03:42,824 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=5, title=제목5, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=6]]
+2022-04-13 17:03:42,824 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=6, title=제목6, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=7]]
+2022-04-13 17:03:42,824 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=7, title=제목7, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=8]]
+2022-04-13 17:03:42,824 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=8, title=제목8, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=9]]
+2022-04-13 17:03:42,825 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=9, title=제목9, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=10]]
+2022-04-13 17:03:42,825 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=10, title=제목10, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=11]]
+2022-04-13 17:03:42,825 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=11, title=제목11, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=12]]
+2022-04-13 17:03:42,825 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=12, title=제목12, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=13]]
+2022-04-13 17:03:42,826 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=13, title=제목13, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=14]]
+2022-04-13 17:03:42,826 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=14, title=제목14, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=15]]
+2022-04-13 17:03:42,826 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=15, title=제목15, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=16]]
+2022-04-13 17:03:42,826 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=16, title=제목16, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=17]]
+2022-04-13 17:03:42,826 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=17, title=제목17, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=18]]
+2022-04-13 17:03:42,826 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=18, title=제목18, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=19]]
+2022-04-13 17:03:42,826 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=19, title=제목19, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=20]]
+2022-04-13 22:49:08,912 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 22:49:08,915 DEBUG [main] board.BoardDao    (BoardDao.java:137)     - query:
+SELECT A.SEQ,                                      
+       A.RNUM AS NUM,                              
+       A.TITLE AS TITLE,                           
+		  A.Read_CNT,								  
+       TO_CHAR(A.MOD_DT,'YYYY/MM/DD') AS MOD_DT,   
+       A.MOD_ID                                    
+FROM (                                             
+    SELECT ROWNUM AS RNUM, T1.*                    
+    FROM (                                         
+        SELECT *                                   
+        FROM board                                 
+         --검색조건                                        
+         ORDER BY mod_dt DESC                      
+     )T1                                           
+     WHERE ROWNUM <= (?*(?-1)+?)                             
+ )A                                                
+ WHERE RNUM >= (?*(?-1)+1)                                   
+
+2022-04-13 22:49:08,915 DEBUG [main] board.BoardDao    (BoardDao.java:138)     - param:SearchVO [searchDiv=, searchWord=, pageSize=20, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 22:49:09,290 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 22:49:09,290 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 22:49:09,291 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 22:49:09,292 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=900001, title=제목_900001_u, contents=null, readCnt=1, regDt=null, regId=null, modDt=2022/04/13, modId=pcwk_u, toString()=DTO [no=1]]
+2022-04-13 22:49:09,292 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=1, title=kakao_U, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=null, toString()=DTO [no=2]]
+2022-04-13 22:49:09,292 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=2, title=제목2, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=3]]
+2022-04-13 22:49:09,292 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=3, title=제목3, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=4]]
+2022-04-13 22:49:09,293 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=4, title=제목4, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=5]]
+2022-04-13 22:49:09,293 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=5, title=제목5, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=6]]
+2022-04-13 22:49:09,293 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=6, title=제목6, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=7]]
+2022-04-13 22:49:09,293 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=7, title=제목7, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=8]]
+2022-04-13 22:49:09,293 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=8, title=제목8, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=9]]
+2022-04-13 22:49:09,293 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=9, title=제목9, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=10]]
+2022-04-13 22:49:09,294 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=10, title=제목10, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=11]]
+2022-04-13 22:49:09,294 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=11, title=제목11, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=12]]
+2022-04-13 22:49:09,294 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=12, title=제목12, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=13]]
+2022-04-13 22:49:09,295 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=13, title=제목13, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=14]]
+2022-04-13 22:49:09,295 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=14, title=제목14, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=15]]
+2022-04-13 22:49:09,295 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=15, title=제목15, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=16]]
+2022-04-13 22:49:09,295 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=16, title=제목16, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=17]]
+2022-04-13 22:49:09,295 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=17, title=제목17, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=18]]
+2022-04-13 22:49:09,295 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=18, title=제목18, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=19]]
+2022-04-13 22:49:09,295 DEBUG [main] board.BoardMain   (BoardMain.java:127)     - vo:BoardVO [seq=19, title=제목19, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=20]]
+2022-04-13 22:59:37,545 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@1e643faf
+2022-04-13 22:59:37,547 DEBUG [main] cmn.SawonDao      (SawonDao.java:417)     - query : 
+DELETE FROM sawon  
+WHERE empno = ?    
+
+2022-04-13 22:59:37,548 DEBUG [main] cmn.SawonDao      (SawonDao.java:418)     - param : 
+SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 22:59:37,636 DEBUG [main] cmn.SawonDao      (SawonDao.java:432)     - flag : 1
+2022-04-13 22:59:37,637 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 22:59:37,638 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 22:59:37,638 DEBUG [main] cmn.SawonMain     (SawonMain.java:42)     - -------------------------
+2022-04-13 22:59:37,638 DEBUG [main] cmn.SawonMain     (SawonMain.java:43)     -     삭제 성공   
+2022-04-13 22:59:37,639 DEBUG [main] cmn.SawonMain     (SawonMain.java:44)     - -------------------------
+2022-04-13 22:59:37,690 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6483f5ae
+2022-04-13 22:59:37,690 DEBUG [main] cmn.SawonDao      (SawonDao.java:366)     -  INSERT INTO sawon ( 
+     empno,          
+     ename,          
+     hiredate,       
+     deptno          
+ ) VALUES (          
+     ?,              
+     ?,              
+     sysdate,        
+     ?               
+ )                   
+
+2022-04-13 22:59:37,690 DEBUG [main] cmn.SawonDao      (SawonDao.java:367)     - param: SawonVO [empno=9001, ename=카카오, hiredate=, deptno=20, toString()=DTO [no=0]]
+2022-04-13 22:59:37,693 DEBUG [main] cmn.SawonDao      (SawonDao.java:382)     - flag : 1
+2022-04-13 22:59:37,693 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 22:59:37,693 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 22:59:37,694 DEBUG [main] cmn.SawonMain     (SawonMain.java:29)     - ----------------
+2022-04-13 22:59:37,695 DEBUG [main] cmn.SawonMain     (SawonMain.java:30)     -    등록성공
+2022-04-13 22:59:37,696 DEBUG [main] cmn.SawonMain     (SawonMain.java:31)     - ----------------
+2022-04-13 22:59:37,746 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@6366ebe0
+2022-04-13 22:59:37,746 DEBUG [main] cmn.SawonDao      (SawonDao.java:538)     - query:
+UPDATE sawon			
+SET ename = ?, 		
+hiredate = SYSDATE, 	
+deptno = ?			
+WHERE empno = ?		
+
+2022-04-13 22:59:37,746 DEBUG [main] cmn.SawonDao      (SawonDao.java:539)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 22:59:37,749 DEBUG [main] cmn.SawonDao      (SawonDao.java:551)     - flag: 1
+2022-04-13 22:59:37,749 DEBUG [main] cmn.SawonMain     (SawonMain.java:87)     - -------------------------
+2022-04-13 22:59:37,749 DEBUG [main] cmn.SawonMain     (SawonMain.java:88)     -     upsert 성공   
+2022-04-13 22:59:37,750 DEBUG [main] cmn.SawonMain     (SawonMain.java:89)     - -------------------------
+2022-04-13 22:59:37,804 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@2698dc7
+2022-04-13 22:59:37,804 DEBUG [main] cmn.SawonDao      (SawonDao.java:478)     - query: 
+  SELECT empno,                                             
+    	  ename,                                             
+        TO_CHAR(hiredate,'YYYY/MM/DD HH24:MI:SS') hiredate,
+    	  deptno                                             
+ FROM sawon                                           	 
+ WHERE empno = ?                                     		 
+
+2022-04-13 22:59:37,804 DEBUG [main] cmn.SawonDao      (SawonDao.java:479)     - param: SawonVO [empno=9001, ename=kakaoUU, hiredate=, deptno=23, toString()=DTO [no=0]]
+2022-04-13 22:59:37,859 DEBUG [main] cmn.SawonDao      (SawonDao.java:499)     - outVO:SawonVO [empno=9001, ename=kakaoUU, hiredate=2022/04/13 22:59:37, deptno=23, toString()=DTO [no=0]]
+2022-04-13 22:59:37,859 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 22:59:37,859 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 22:59:37,859 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 22:59:37,861 DEBUG [main] cmn.SawonMain     (SawonMain.java:55)     - ---------------------
+2022-04-13 22:59:37,861 DEBUG [main] cmn.SawonMain     (SawonMain.java:56)     - ---조회성공---
+2022-04-13 22:59:37,862 DEBUG [main] cmn.SawonMain     (SawonMain.java:57)     - ---------------------
+2022-04-13 22:59:37,907 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@7b227d8d
+2022-04-13 22:59:37,908 DEBUG [main] cmn.SawonDao      (SawonDao.java:283)     - query:
+ SELECT tt1.rnum as num,                                   
+        tt1.empno,                                         
+        tt1.ename,                                         
+        TO_CHAR(tt1.hiredate,'YYYY/MM/DD') AS hiredate,    
+        tt1.deptno                                         
+ FROM(                                                     
+     SELECT ROWNUM AS rnum, t1.*                           
+     FROM (                                                
+         SELECT *                                          
+         FROM sawon                                        
+WHERE ename LIKE ? ||'%'          --검색조건                                        
+         ORDER BY hiredate DESC                            
+     )t1                                                   
+     WHERE ROWNUM <= (?*(?-1)+?) 			
+ )tt1                                                   	   
+     WHERE rnum >= (?*(?-1)+1) 			
+
+2022-04-13 22:59:37,908 DEBUG [main] cmn.SawonDao      (SawonDao.java:284)     - param:SearchVO [searchDiv=20, searchWord=pcwk8, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 22:59:37,914 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 22:59:37,914 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 22:59:37,914 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 22:59:37,915 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8000, ename=pcwk8000, hiredate=2000/05/11, deptno=10, toString()=DTO [no=1]]
+2022-04-13 22:59:37,915 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8001, ename=pcwk8001, hiredate=2000/05/10, deptno=20, toString()=DTO [no=2]]
+2022-04-13 22:59:37,915 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8002, ename=pcwk8002, hiredate=2000/05/09, deptno=10, toString()=DTO [no=3]]
+2022-04-13 22:59:37,915 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8003, ename=pcwk8003, hiredate=2000/05/08, deptno=20, toString()=DTO [no=4]]
+2022-04-13 22:59:37,915 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8004, ename=pcwk8004, hiredate=2000/05/07, deptno=10, toString()=DTO [no=5]]
+2022-04-13 22:59:37,915 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8005, ename=pcwk8005, hiredate=2000/05/06, deptno=20, toString()=DTO [no=6]]
+2022-04-13 22:59:37,915 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8006, ename=pcwk8006, hiredate=2000/05/05, deptno=10, toString()=DTO [no=7]]
+2022-04-13 22:59:37,916 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8007, ename=pcwk8007, hiredate=2000/05/04, deptno=20, toString()=DTO [no=8]]
+2022-04-13 22:59:37,916 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8008, ename=pcwk8008, hiredate=2000/05/03, deptno=10, toString()=DTO [no=9]]
+2022-04-13 22:59:37,916 DEBUG [main] cmn.SawonMain     (SawonMain.java:106)     - vo:SawonVO [empno=8009, ename=pcwk8009, hiredate=2000/05/02, deptno=20, toString()=DTO [no=10]]
+2022-04-13 22:59:37,977 DEBUG [main] cmn.PConnection   (PConnection.java:28)     - connection : oracle.jdbc.driver.T4CConnection@65d6b83b
+2022-04-13 22:59:37,977 DEBUG [main] cmn.SawonDao      (SawonDao.java:72)     - query: 
+ SELECT COUNT(*) AS totalCnt	
+FROM sawon					
+WHERE ename LIKE ? ||'%' 
+2022-04-13 22:59:37,977 DEBUG [main] cmn.SawonDao      (SawonDao.java:73)     - param: SearchVO [searchDiv=20, searchWord=pcwk8, pageSize=10, pageNum=1, toString()=DTO [no=0]]
+2022-04-13 22:59:37,981 DEBUG [main] cmn.SawonDao      (SawonDao.java:87)     - totalCnt: 1000
+2022-04-13 22:59:37,981 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:33)     - ResultSet자원 반납
+2022-04-13 22:59:37,981 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:48)     - PreparedStatement 자원 반납
+2022-04-13 22:59:37,981 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - Connection자원 반납
+2022-04-13 22:59:37,982 DEBUG [main] cmn.SawonMain     (SawonMain.java:118)     - ----------------------
+2022-04-13 22:59:37,982 DEBUG [main] cmn.SawonMain     (SawonMain.java:119)     - -총글수(성공) :1000
+2022-04-13 22:59:37,982 DEBUG [main] cmn.SawonMain     (SawonMain.java:120)     - ----------------------

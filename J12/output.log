@@ -1,0 +1,7 @@
+2022-02-23 23:48:43,132 DEBUG [main] stirng.LoggerManager (CGVParseMain.java:44)     - 1.더 배트맨, 예매율: 36.2%, 개봉일: 2022.03.01  D-6, 포스터: https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg
+2022-02-23 23:48:43,135 DEBUG [main] stirng.LoggerManager (CGVParseMain.java:44)     - 2.극장판 주술회전 0, 예매율: 17.1%, 개봉일: 2022.02.17 , 포스터: https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85603/85603_320.jpg
+2022-02-23 23:48:43,136 DEBUG [main] stirng.LoggerManager (CGVParseMain.java:44)     - 3.언차티드, 예매율: 13.1%, 개봉일: 2022.02.16 , 포스터: https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85624/85624_320.jpg
+2022-02-23 23:48:43,136 DEBUG [main] stirng.LoggerManager (CGVParseMain.java:44)     - 4.안테벨룸, 예매율: 7.7%, 개봉일: 2022.02.23 , 포스터: https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85581/85581_320.jpg
+2022-02-23 23:48:43,136 DEBUG [main] stirng.LoggerManager (CGVParseMain.java:44)     - 5.인민을 위해 복무하라, 예매율: 6.2%, 개봉일: 2022.02.23 , 포스터: https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85635/85635_320.jpg
+2022-02-23 23:48:43,137 DEBUG [main] stirng.LoggerManager (CGVParseMain.java:44)     - 6.피그, 예매율: 4.3%, 개봉일: 2022.02.23 , 포스터: https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85582/85582_320.jpg
+2022-02-23 23:48:43,137 DEBUG [main] stirng.LoggerManager (CGVParseMain.java:44)     - 7.나이트메어 앨리, 예매율: 4.1%, 개봉일: 2022.02.23 , 포스터: https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85652/85652_320.jpg
